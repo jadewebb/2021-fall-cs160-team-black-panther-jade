@@ -13,6 +13,14 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
 import net.tbp.interval.backup.Event;
 import net.tbp.interval.backup.UserProfile;
+import net.tbp.interval.database.EventRepository;
+
+/**
+ * Class for testing Event Repo
+ *
+ * @author Hugo Wong
+ *
+ */
 
 @DataJpaTest
 
@@ -30,9 +38,9 @@ public class EventRepositoryTest {
 
 	void setUp() {
 
-		testProfile1 = new UserProfile(1, "John", "Doe", "jd123", "pepela", "jd123@gmail.com", "0001234567");
+		testProfile1 = new UserProfile(1, "John", "Doe", "jd123", "r53S2?2H8", "jd123@gmail.com", "0001234567");
 
-		testProfile1 = new UserProfile(2, "Mary", "Jane", "mj441", "spooderman", "mj441@gmail.com", "0009876543");
+		testProfile1 = new UserProfile(2, "Mary", "Jane", "mj441", "k*nT%84SW", "mj441@gmail.com", "0009876543");
 
 		testEvent1 = new Event(1, "Dishes", "Do the dishes.", "Home", "Housework", "none",
 
